@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/app.css">
+  <title>get started</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- back to main page-->
+      <div>
+        <a href="index.html">
+          <img src="images/logo.png" alt="home of board games logo" width="50px">
+        </a>
+      </div>
+      <!---- back button ---->
+      <a href="index.html">back</a>
+    </nav>
+  </header>
+  
+  <main>
+    <form action="api/v1/board-games" method="GET">
+      <div>
+        <input type="name" name="first-name" placeholder="First Name" required>
+        <input type="name" name="other-name" placeholder="Other Names" required>
+        <input type="date" name="date-of-birth" placeholder="date of birth" required>
+      </div>
+      <div>
+        <input type="name" name="user-name" placeholder="user name" maxlength="10">
+      </div>
+      <div>
+        <input type="email" name=email-adress placeholder="email" required>
+      </div>
+      <div>
+        <input type="password" name="password" placeholder="password" maxlength="16"required>
+        <input type="password" name="confirm-password" placeholder="confirm password" maxlength="16" required>
+      </div>
+      <div>
+        <button type="submit">sign up</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
